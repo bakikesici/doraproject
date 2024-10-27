@@ -83,7 +83,7 @@ int main() {
     const char* decryptedMessage = decrypt(encryptedMessage);  
     displayMessage(decryptedMessage);  
 
-    free((void*)decryptedMessage);  // Çözülmüş mesaj için belleği serbest bırak
+    free((void*)decryptedMessage);
 
     return 0;
 }
