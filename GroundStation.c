@@ -31,8 +31,7 @@ const char* receiveMessage(int port) {
         exit(EXIT_FAILURE);
     }
 
-    /
-    int n = recvfrom(sockfd, buffer, sizeof(buffer) - 1, 0, 
+    int n= recvfrom(sockfd, buffer, sizeof(buffer) - 1, 0, 
                      (struct sockaddr *) &clientAddr, &addrLen);
     if (n < 0) {
         perror("Alma başarısız");
